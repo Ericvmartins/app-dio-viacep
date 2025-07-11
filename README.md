@@ -28,9 +28,7 @@ Uma aplicação móvel desenvolvida em Flutter para consultar, guardar e gerir C
 
 ## Tecnologias Utilizadas
 
-<img align="center" alt="Flutter" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
-<img align="center" alt="Dart" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" />
-<img align="center" alt="Back4App/Parse" height="40" width="120" src="https://raw.githubusercontent.com/parse-community/parse-logo/main/logo-text-horizontal-dark.svg" />
+<img align="center" alt="Flutter" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" /><img align="center" alt="Dart" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" />
 
 <br>
 
