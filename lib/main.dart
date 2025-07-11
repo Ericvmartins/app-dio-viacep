@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 import 'package:projeto_dio_viacep/pages/home_page.dart';
 import 'package:projeto_dio_viacep/pages/splash_screen.dart';
+import 'constants.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,7 @@ class MyApp extends StatelessWidget {
 
   Future<bool> _initializeParse() async {
     WidgetsFlutterBinding.ensureInitialized();
-    const keyApplicationId = 'IUqhu2TrOXixumUCkrff4EhP4vE8XL5csbMSDiFx';
-    const keyClientKey = 'qMGcg58mppOlwUSE63V0pAhLoldeQCuq8uEzidWP';
+
     const keyParseServerUrl = 'https://parseapi.back4app.com';
 
     await Parse().initialize(

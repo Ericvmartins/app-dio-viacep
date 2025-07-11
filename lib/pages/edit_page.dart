@@ -16,7 +16,6 @@ class _EditScreenState extends State<EditScreen> {
   final _formKey = GlobalKey<FormState>();
   bool _isLoading = false;
 
-  // Controladores para cada campo do formulário
   late TextEditingController _logradouroController;
   late TextEditingController _complementoController;
   late TextEditingController _bairroController;
@@ -26,7 +25,6 @@ class _EditScreenState extends State<EditScreen> {
   @override
   void initState() {
     super.initState();
-    // Preenche os controladores com os dados atuais do CEP
     _logradouroController = TextEditingController(text: widget.cep.logradouro);
     _complementoController = TextEditingController(
       text: widget.cep.complemento,
@@ -90,16 +88,19 @@ class _EditScreenState extends State<EditScreen> {
                 validator: (value) =>
                     value!.isEmpty ? 'Campo obrigatório' : null,
               ),
+              const SizedBox(height: 16),
               TextFormField(
                 controller: _complementoController,
                 decoration: const InputDecoration(labelText: 'Complemento'),
               ),
+              const SizedBox(height: 16),
               TextFormField(
                 controller: _bairroController,
                 decoration: const InputDecoration(labelText: 'Bairro'),
                 validator: (value) =>
                     value!.isEmpty ? 'Campo obrigatório' : null,
               ),
+              const SizedBox(height: 16),
               TextFormField(
                 controller: _localidadeController,
                 decoration: const InputDecoration(
@@ -108,6 +109,7 @@ class _EditScreenState extends State<EditScreen> {
                 validator: (value) =>
                     value!.isEmpty ? 'Campo obrigatório' : null,
               ),
+              const SizedBox(height: 16),
               TextFormField(
                 controller: _ufController,
                 decoration: const InputDecoration(labelText: 'UF'),
